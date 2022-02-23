@@ -1,0 +1,78 @@
+.Chat {
+  position: absolute;
+  width: 500px;
+  height: 600px;
+  top: calc(50% - 300px);
+  left: calc(50% - 250px);
+
+  border-radius: 20px;
+  box-shadow: 0px 0px 120px #0005;
+  overflow: hidden;
+}
+
+
+
+/* Header */
+
+.chatHeader {
+  height: 40px;
+  border-bottom: solid 2px #aaa;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.chatHeader > h1 {
+  font-size: 22px;
+}
+
+/* Messages */
+
+.chatMessages {
+  height: calc(100% - 82px);
+  height: calc(100% - 142px);
+  padding: 50px 20px;
+
+  overflow-y: auto;
+}
+
+.chatMessageInput {
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  right: 15px;
+  padding: 2px;
+}
+
+.chatMessages > p {
+  overflow-wrap: break-word;
+}
+
+.chatMessages > p > span {
+  font-weight: bold;
+}
+
+
+/* Scrollbar */
+
+
+
+.chatMessages::-webkit-scrollbar {
+  width: 4px;
+}
+
+.chatMessages::-webkit-scrollbar-track {
+  background: #00000005;
+  background: #0003;
+}
+
+.chatMessages::-webkit-scrollbar-thumb {
+  background: #0001;
+  background: #0004;
+}
+
+.chatMessages::-webkit-scrollbar-thumb:hover {
+  background: #0000001a;
+  background: #0005;
+}
