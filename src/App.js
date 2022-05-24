@@ -62,7 +62,7 @@ class App extends React.Component {
 
   sendMessage(message) {
     const messageObj = {name: this.state.name, message: message};
-    const jsonString = JSON.stringify(messageObj)
+    const jsonString = JSON.stringify(messageObj);
     this.socket.send(jsonString);
   }
 
@@ -70,10 +70,10 @@ class App extends React.Component {
     let connectionStatus = "Connecting...";
     let spanStyle = {color: "#565656"};
     if (this.state.socket == true) {
-      connectionStatus = "Connected"
+      connectionStatus = "Connected";
       spanStyle.color = "#334299";
     } else if (this.state.socket == false) {
-      connectionStatus = "Disconnected"
+      connectionStatus = "Disconnected";
       spanStyle.color = "#bf4040";
     }
 
